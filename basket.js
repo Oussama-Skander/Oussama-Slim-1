@@ -9,7 +9,7 @@ document.getElementById("home").onclick = function () {
     };
 //------------------------------------------------------    
 document.getElementById("return").onclick = function () {
-        location.href = "2.html";
+        location.href = "categ.html";
     };
 //--------------------------------------------------------
 function empty(){
