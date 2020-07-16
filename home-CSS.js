@@ -1,1 +1,0 @@
-$('nav').css({"padding-top", "38px"});
