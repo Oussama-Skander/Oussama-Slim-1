@@ -5,9 +5,9 @@ function Products(image, description, price){
 };
 
 var productsMen = [
+new Products('img', 'maryoul', 25),
 new Products('img', 'men shirt', 25),
-new Products('img', 'men shirt', 25),
-new Products('img', 'men shirt', 25),
+new Products('img', '5al3a', 25),
 new Products('img', 'men shirt', 25),
 ];
 
@@ -25,14 +25,27 @@ new Products('img', 'child rose', 25),
 new Products('img', 'child jean', 25),
 ];
 
-function generate(category){
+function generate(category){ 
+	
 	for (var i = 0; i < category.length; i++) {
-		var element = document.getElementById('desc' + i);
-		element.innerHTML = category[i].description;
+		var im = document.getElementById('img' + i);
+		im.innerHTML = category[i].image;
+		var descrip = document.getElementById('desc' + i);
+		descrip.innerHTML = category[i].description;
+		var prix = document.getElementById('price' + i);
+		prix.innerHTML = category[i].price;
 	}
 };
 
-generate(productsChildren);
+//$('categMen').onclick(generate(productsMen)) ;
+
+/*var total = 0;
+function totalToPay(arr){
+	var button = document.getElementByClassName('tot');
+	this.button.onclick = function(){
+	total += arr[i].price
+	
+}*/
 
 
 
