@@ -2,12 +2,7 @@ function Products(image, description, price){
 	this.image = image;
 	this.description = description;
 	this.price = price;
-	
-};
 
-Products.prototype.getPrice = function(category) {	
-	 return this.price;
-};
 
 var productsMen = [ 
 new Products('img', 'maryoul', 25 ),
@@ -75,3 +70,4 @@ function sum(num) {
       var y = parseInt(price) + parseInt(num)
       document.getElementById("p1").innerHTML = y
 }
+
